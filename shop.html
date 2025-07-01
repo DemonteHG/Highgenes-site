@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shop | HighGenes</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #000;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #fff;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 40px;
+    }
+    .product {
+      background-color: #1a1a1a;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .product h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .product p {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+    .product a {
+      background-color: #e91e63;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .product a:hover {
+      background-color: #ff4081;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HighGenes Shop</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+  </header>
+
+  <section class="shop-grid">
+    <div class="product">
+      <img src="images/bold-tee-front.png" alt="Bold Tee Front" />
+      <img src="images/bold-tee-back.png" alt="Bold Tee Back" />
+      <h2>Bold HighGenes Tee</h2>
+      <p>$35</p>
+      <a href="product1.html">View Product</a>
+    </div>
+  </section>
+</body>
+</html>
